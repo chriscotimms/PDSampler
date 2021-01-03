@@ -1,0 +1,37 @@
+#N canvas 0 0 1892 963.094 10;
+#X obj 152 162 ru.samp.poly;
+#X msg 224 138 Snare/01.wav;
+#X floatatom 185 139 5 0 0 0 - - -, f 5;
+#X obj 142 115 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 156 356 dac~ 1 2;
+#X floatatom 228 180 5 0 0 0 - - -, f 5;
+#X obj 306 14 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 306 37 random 10;
+#X obj 304 101 line;
+#X obj 196 40 ctlin 17 0;
+#X obj 196 65 / 12;
+#X obj 154 291 *~ 0.5;
+#X obj 233 73 loadbang;
+#X msg 238 102 1;
+#X obj 306 56 - 5;
+#X msg 304 76 \$1 2000;
+#X connect 0 0 11 0;
+#X connect 0 1 5 0;
+#X connect 1 0 0 2;
+#X connect 2 0 0 1;
+#X connect 3 0 0 0;
+#X connect 3 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 14 0;
+#X connect 8 0 2 0;
+#X connect 9 0 10 0;
+#X connect 10 0 2 0;
+#X connect 11 0 4 0;
+#X connect 11 0 4 1;
+#X connect 12 0 13 0;
+#X connect 12 0 1 0;
+#X connect 13 0 2 0;
+#X connect 14 0 15 0;
+#X connect 15 0 8 0;
